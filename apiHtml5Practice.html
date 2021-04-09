@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Práctica API's de HTML5</title>
+      <script type="text/javascript" src="./apiHtml5Practice.js"></script> 
+      <link rel="stylesheet" type="text/css" href="./apiHtml5Practice.css">
+  </head>
+  <body>
+      <h1>Vamos a seleccionar un archivo de video y reproducirlo</h1>
+    
+      <div id="selectFile">
+        <p>Escoge un video:  </p>
+        <input id="newlocalFILE" name="localfile" accept="video/*" type="file" onchange="playlocalVID();">
+      </div>
+    
+      <div>
+        <video  id="videoPlayer" poster="./ezgif.com-gif-makerLast.gif"  width="620" height="300"> <source id='currentVID'  type="video/mp4">
+          No se puede reproducir este contenido
+        </video>
+      </div>
+    
+      <div id="video">
+        <button  onclick="playVideo();">&#9199 Reproducir</button> 
+        <button  onclick="stopVideo();">&#9209 Parar</button> 
+        <button  onclick="volumeUp();">&#9195 Subir Volumen</button>
+        <button  onclick="volumeDown();">&#9196 Bajar Volumen</button> 
+      </div>
+  </body>
+</html>
